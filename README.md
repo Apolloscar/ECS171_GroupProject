@@ -41,7 +41,10 @@ https://github.com/Apolloscar/ECS171_GroupProject
 - Furthermore, we created a new column named 'target', iterated through the 'quality' column, and populated the 'target' entries with 0 if the element in the 'quality' column was less or equal to the 'quality' median value and 1 otherwise. We then dropped the 'quality' column for the model.
 - We noticed the frequency of ones in the 'target' column was much lower than the frequency of zeroes, so we took note to oversample our traning data when building the model. This way there will be enough data on each of the 'target' values to to train the model better. 
 
-### Part 2: First Model Building Using Logistic Regression
-- We then began to build our logistic regression model utilizing all the information we collected
+### Part 2: First Model Build Using Logistic Regression
+- We then began to build our logistic regression model utilizing all the information we collected:
+     - We oversampled our training data, scaled using MinMax, and then fitted and ran our model.
 
- From the MSE of training and testing, it is observed that the model provided is neither overfitting nor underfitting; training MSE is low and both training MSE and testing MSE are relatively close in value. From the coefficient scatterplot, it is shown that the feature with the most impact in reaching good quality is alcohol since it has the highest magnitude value. 
+#### Model Reports:
+ - From the MSE of training and testing, it is observed that the model provided is neither overfitting nor underfitting; training MSE is low and both training MSE and testing MSE are relatively close in value. 
+ - From the coefficient scatterplot, it is shown that the feature with the most impact in reaching good quality is alcohol since it has the highest magnitude value. 
