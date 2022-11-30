@@ -30,8 +30,6 @@ https://archive.ics.uci.edu/ml/datasets/Wine+Quality (Red wine only)
 - Also, if the wine were to taste bad, then these attributes could be checked under the model to determine which characteristic is negatively affecting the flavor.
 - Another model can be created using polynomial regression, which could determine the attribute with the highest correlation to quality as well.
 
-https://github.com/Apolloscar/ECS171_GroupProject
-
 ## Preprocessing & First Model Building Milestone:
 
 ### Part 1: Data Preprocessing
