@@ -39,9 +39,9 @@ https://github.com/Apolloscar/ECS171_GroupProject
 - Next, since the data types of all the features were numerical, no data was dropped, and no observations were removed or filled in because there were no NULL values.
 - Afterwards, we determined that our data had some outliers, so we made note to utilize MinMax scaling in order to avoid any outliers negatively impacting the data and therefore the model.
 - Furthermore, we created a new column named 'target', iterated through the 'quality' column, and populated the 'target' entries with 0 if the element in the 'quality' column was less or equal to the 'quality' median value and 1 otherwise. We then dropped the 'quality' column for the model.
-- We noticed the frequency of ones in the 'target' column was much lower than the frequency of zeros, so we took note to oversample our traning data when building the model.
+- We noticed the frequency of ones in the 'target' column was much lower than the frequency of zeroes, so we took note to oversample our traning data when building the model.
 
 ### Part 2: First Model Building Using Logistic Regression
-- We than began to build our logistic regression model utilizing all the informaiton we collected
+- We then began to build our logistic regression model utilizing all the information we collected
 
  From the MSE of training and testing, it is observed that the model provided is neither overfitting nor underfitting; training MSE is low and both trainingg MSE and testing MSE are relatively close in value. From the coefficient scatterplot, it is shown that the feature with the most impact in reaching good quality is alcohol since it has the highest magnitude value. 
