@@ -3,10 +3,11 @@
 ## Group members:
 Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
 
-## Data source: 
-https://archive.ics.uci.edu/ml/datasets/Wine+Quality (Red wine only)
+## 1. Introduction
+ 
+[Data Source](https://archive.ics.uci.edu/ml/datasets/Wine+Quality) (Red wine only)
 
-## Data Features (12 total):
+### Data Features (12 total):
  - fixed acidity
  - volatile acidity
  - citric acid
@@ -20,7 +21,7 @@ https://archive.ics.uci.edu/ml/datasets/Wine+Quality (Red wine only)
  - alcohol
  - quality (score between 0 and 10)
 
- ## Group Project Abstract
+ ### Group Project Abstract
 
 - This data on red wine was gathered in Northern Portugal. It contains physicochemical qualities of wine as well as a subject value on quality ranging from 0-10.  
 - We can create a model that uses the physicochemical attributes to determine whether a red wine will be good or not. 
@@ -29,6 +30,15 @@ https://archive.ics.uci.edu/ml/datasets/Wine+Quality (Red wine only)
 - This model can be used to determine which factors significantly influence the quality of red wine to improve flavor and can help create a guideline on what values each component should have. 
 - Also, if the wine were to taste bad, then these attributes could be checked under the model to determine which characteristic is negatively affecting the flavor.
 - Another model can be created using polynomial regression, which could determine the attribute with the highest correlation to quality as well.
+
+## 2. Submission History
+  - ToDo
+
+## 4. Write Up
+### A. Introduction Part 2
+  - We chose to build a project around determining the main factors contributing to a red-wine's quality because we wanted to relate what we learned in class to something completely unrelated. We wanted to show the versatility of topics that machine learning can be applied to. If we can build a model to effectively predict red-wine quality based on its physicochemical attributes, then we can determine the qualities that heavily influence the grade of red-wine. This information can then be used in industry to allow producers to focus on fine tuning attributes, which will produce the highest quality product, and as a result increase the price at which they can sell their red-wine.
+### B. Figures
+  - 
 
 ## Preprocessing & First Model Building Milestone:
 
