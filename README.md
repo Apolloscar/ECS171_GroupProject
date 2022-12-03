@@ -41,7 +41,7 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
 
 ### B. Figures
   - ToDo
-
+-   [My Image](Figures/try.jpg)
 ### C. Methods
 -  [Link to full ipynb on GitHub](https://github.com/Apolloscar/ECS171_GroupProject/blob/main/Project.ipynb)
 
