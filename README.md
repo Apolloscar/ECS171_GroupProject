@@ -64,7 +64,13 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
 
 ### D. Results
 #### Model 1: Logistic Regression
-   - From the MSE of training and testing, it is observed that the model provided is neither overfitting nor underfitting; training MSE is low and both training MSE and testing MSE are relatively close in value. 
+   - From the MSE of training and testing, it is observed that the model provided is neither overfitting nor underfitting; training MSE is low and both training MSE and testing MSE are relatively close in value.
+
+| Data      | MSE     |
+| --------  | ------  |
+| Training  | 0.1823  |
+| Testing   | 0.225   |
+
    - From the coefficient scatterplot, it is shown that the feature with the most impact in reaching good quality is alcohol since it has the highest magnitude value. 
 
 | Features              | Coefficients  |
