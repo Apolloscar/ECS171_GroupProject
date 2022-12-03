@@ -66,19 +66,19 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
 #### Model 1: Logistic Regression
    - From the MSE of training and testing, it is observed that the model provided is neither overfitting nor underfitting; training MSE is low and both training MSE and testing MSE are relatively close in value. 
    - From the coefficient scatterplot, it is shown that the feature with the most impact in reaching good quality is alcohol since it has the highest magnitude value. 
-   -| Features              | Coefficients  |
-    | -----------           | -----------   |
-    | Fixed Acidity         | 2.40104666    |
-    | Volatile Acidity      | -4.01183912   |
-    | Citric Acid           | 0.33981768    |
-    | Residual Sugar        | 1.16270763    |
-    | Chlorides             | -2.62511007   |
-    | Free Sulfur Dioxide   | 0.07871166    |
-    | Total Sulfur Dioxide  | -4.31185535   |
-    | Density               | -2.12932732   |
-    | pH                    | 0.04099653    |
-    | Sulphates             | 4.69369245    |
-    | Alcohol               | 5.68847506    |
+| Features              | Coefficients  |
+| -----------           | -----------   |
+| Fixed Acidity         | 2.40104666    |
+| Volatile Acidity      | -4.01183912   |
+| Citric Acid           | 0.33981768    |
+| Residual Sugar        | 1.16270763    |
+| Chlorides             | -2.62511007   |
+| Free Sulfur Dioxide   | 0.07871166    |
+| Total Sulfur Dioxide  | -4.31185535   |
+| Density               | -2.12932732   |
+| pH                    | 0.04099653    |
+| Sulphates             | 4.69369245    |
+| Alcohol               | 5.68847506    |
 
  #### Model 2: [Blank]
    - ToDo
