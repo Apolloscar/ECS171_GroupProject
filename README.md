@@ -122,7 +122,9 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
   - We then noticed the frequency of ones in the **target** column was much lower than the frequency of zeroes. To address this, we oversampled our traning data before building the model, so enough data was present in each of the **target** classes to better train the model.
   - to remove the outliers we detected during data exploration.
   - to see how our data was distributed
-  - why we used logistic regression
+  #### Model 1: Logistic Regression
+  - We wanted to figure out which of the features given in the data had the most impact in affecting the quality of wine. For that reason, logistic regression was used in order to get the coefficients for each feature from the model. After the model we deduced that alcohol was the biggest contributor in quality since it had the highest coefficient. This makes sense with alcohol being the most reviewed feature of wine by consumers. As compared to residual sugar and citric acid, more often than not, a consumer will mostly just check the amount of alcohol in wine. 
+  - As for the credibility of this model, it is best to not fully trust it but rather to be taken into consideration. Just because alcohol has the best impact on quality, does not mean that more alcohol will guarantee better quality since there is a limit to how much a human can consume. Also data had limited ranges such as with quality only having values from 3-8, giving us a small amount of good quality wine data. This lack of variety made it harder for the model to be able to predict values outside this range. 
 
 ### F. Conclusion
   - ToDo
