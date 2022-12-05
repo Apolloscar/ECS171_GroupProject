@@ -46,13 +46,17 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
 -  [Link to full ipynb on GitHub](https://github.com/Apolloscar/ECS171_GroupProject/blob/main/Project.ipynb)
 
   #### Data Exploration
+   - [Link to Data Exploration on GitHub](https://github.com/Apolloscar/ECS171_GroupProject/blob/main/Code_Sections/DataExploration.ipynb)
    - To explore our dataset we executed the following:
      - Printed the data type of each column in our dataframe.
      - Checked if any of the features had missing values.
      - Used the describe() function and created a pairplot.
      - Generated a correlation matrix in the form of a heatmap.
 
+
+
    #### Preprocessing
+   - [Link to Preprocessing on GitHub](https://github.com/Apolloscar/ECS171_GroupProject/blob/main/Code_Sections/DataPreprocessing.ipynb)
    - First, we created a new column named **target**, iterated through the **quality** column, and populated the **target** entries with 0 if the element in the **quality** column was less or equal to **quality**'s median value and 1 otherwise. 
    - We then dropped the **quality** column and added **target** to the dataframe. 
    - Finally, we oversampled the **target** data, and utilized MinMax to scale.
@@ -64,6 +68,7 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
 
 ### D. Results
 #### Model 1: Logistic Regression
+   - [Link to Model 1 on GitHub](https://github.com/Apolloscar/ECS171_GroupProject/blob/main/Code_Sections/Model1_Logistic.ipynb)
    - From the MSE of training and testing, it is observed that the model provided is neither overfitting nor underfitting; training MSE is low and both training MSE and testing MSE are relatively close in value.
 
 | Data      | MSE     |
@@ -88,6 +93,7 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
 | Alcohol               | 5.68847506    |
 
  #### Model 2: KNN Classification
+   - [Link to Model 2 on GitHub](https://github.com/Apolloscar/ECS171_GroupProject/blob/main/Code_Sections/Model2_KNN.ipynb)
    - Trying odd values with 21 and 61, it was determined that a K value of 39 gave us the most accurate model.
    - Given the MSE from training and testing of the model, it is believed that the model is slightly overfitting due to training MSE being low and testing MSE being relatively high.
 
