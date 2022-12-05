@@ -27,7 +27,7 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
 - We will then use logistic regression to create a model that can predict quality;furthermore, we can create a correlation matrix and model coefficients on a scatterplot to see which attributes strongly affect the taste of red wine. 
 - This model can be used to determine which factors significantly influence the quality of red wine to improve flavor and can help create a guideline on what values each component should have. 
 - Also, if the wine were to taste bad, then these attributes could be checked under the model to determine which characteristic is negatively affecting the flavor.
-- Another model can be created using polynomial regression, which could determine the attribute with the highest correlation to quality as well.
+- Another model can be created using KNN, which could be used to classify wine as either good or bad with the given features.
 
 ## 2. Submission History
   - ToDo
@@ -41,7 +41,7 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
 
 ### B. Figures
   - ToDo
--   [My Image](Figures/try.jpg)
+
 ### C. Methods
 -  [Link to full ipynb on GitHub](https://github.com/Apolloscar/ECS171_GroupProject/blob/main/Project.ipynb)
 
@@ -59,8 +59,8 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
    #### Model 1: Logistic Regression
    - For our first model, we built it using logistic regression.
 
-   #### Model 2: [Blank]
-   - ToDo
+   #### Model 2: KNN Classification
+   - Second model, KNN was used to clasify wine.
 
 ### D. Results
 #### Model 1: Logistic Regression
@@ -87,7 +87,7 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
 | Sulphates             | 4.69369245    |
 | Alcohol               | 5.68847506    |
 
- #### Model 2: [Blank]
+ #### Model 2: KNN Classification
    - ToDo
 
  #### Final Results Summary
