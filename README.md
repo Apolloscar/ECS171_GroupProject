@@ -33,7 +33,11 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
   - ToDo
 
 ## 3. Code Uploaded
-  - ToDo
+  - [Link to full ipynb on GitHub](https://github.com/Apolloscar/ECS171_GroupProject/blob/main/Project.ipynb)
+  - [Link to Data Exploration on GitHub](https://github.com/Apolloscar/ECS171_GroupProject/blob/main/Code_Sections/DataExploration.ipynb)
+  - [Link to Preprocessing on GitHub](https://github.com/Apolloscar/ECS171_GroupProject/blob/main/Code_Sections/DataPreprocessing.ipynb)
+  - [Link to Model 1 on GitHub](https://github.com/Apolloscar/ECS171_GroupProject/blob/main/Code_Sections/Model1_Logistic.ipynb)
+  - [Link to Model 2 on GitHub](https://github.com/Apolloscar/ECS171_GroupProject/blob/main/Code_Sections/Model2_KNN.ipynb)
 
 ## 4. Write Up
 ### A. Introduction
