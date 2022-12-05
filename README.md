@@ -90,6 +90,7 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
  #### Model 2: KNN Classification
    - Trying odd values with 21 and 61, it was determined that a K value of 39 gave us the most accurate model.
    - Given the MSE from training and testing of the model, it is believed that the model is slightly overfitting due to training MSE being low and testing MSE being relatively high.
+
 | Data      | MSE     |
 | --------  | ------  |
 | Training  | 0.157   |
