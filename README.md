@@ -88,7 +88,8 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
 | Alcohol               | 5.68847506    |
 
  #### Model 2: KNN Classification
-   - ToDo
+   - Trying odd values with 21 and 61, it was determined that a K value of 39 gave us the most accurate model.
+   - Given the MSE from training and testing of the model, it is believed that the model is slightly overfitting due to training MSE being low and testing MSE being relatively high.
 
  #### Final Results Summary
    - ToDo
