@@ -66,6 +66,7 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
    - Used resampled, scaled data to train model.
    - Used model to predict yhat of both training and testing data.
    - Used those values to produce MSE as well as their classification report.
+   - Created a scatterplot with coefficients from model and printed their values.
 
    #### Model 2: KNN Classification
    - [Link to Model 2 on GitHub](https://github.com/Apolloscar/ECS171_GroupProject/blob/main/Code_Sections/Model2_KNN.ipynb)
