@@ -61,14 +61,23 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
    - We then dropped the **quality** column and added **target** to the dataframe. 
    - Finally, we oversampled the **target** data, and utilized MinMax to scale.
    #### Model 1: Logistic Regression
+   - [Link to Model 1 on GitHub](https://github.com/Apolloscar/ECS171_GroupProject/blob/main/Code_Sections/Model1_Logistic.ipynb)
    - For our first model, we built it using logistic regression.
+   - Used resampled, scaled data to train model.
+   - Used model to predict yhat of both training and testing data.
+   - Used those values to produce MSE as well as their classification report.
 
    #### Model 2: KNN Classification
-   - Second model, KNN was used to clasify wine.
+   - [Link to Model 2 on GitHub](https://github.com/Apolloscar/ECS171_GroupProject/blob/main/Code_Sections/Model2_KNN.ipynb)
+   - Second model, KNN was used to clasify wine as either good or bad.
+   - Test models with different K values and aved their acurracy.
+   - Chose K with highest accuracy and used it for model.
+   - Predicted yhat for both training and testing data.
+   - Calculated MSE and Classification Report with these values.
 
 ### D. Results
 #### Model 1: Logistic Regression
-   - [Link to Model 1 on GitHub](https://github.com/Apolloscar/ECS171_GroupProject/blob/main/Code_Sections/Model1_Logistic.ipynb)
+   
    - From the MSE of training and testing, it is observed that the model provided is neither overfitting nor underfitting; training MSE is low and both training MSE and testing MSE are relatively close in value.
 
 | Data      | MSE     |
@@ -93,7 +102,7 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
 | Alcohol               | 5.68847506    |
 
  #### Model 2: KNN Classification
-   - [Link to Model 2 on GitHub](https://github.com/Apolloscar/ECS171_GroupProject/blob/main/Code_Sections/Model2_KNN.ipynb)
+   
    - Trying odd values with 21 and 61, it was determined that a K value of 39 gave us the most accurate model.
    - Given the MSE from training and testing of the model, it is believed that the model is slightly overfitting due to training MSE being low and testing MSE being relatively high.
 
