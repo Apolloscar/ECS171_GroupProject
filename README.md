@@ -129,6 +129,11 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
   #### Model 1: Logistic Regression
   - We wanted to figure out which of the features given in the data had the most impact in affecting the quality of wine. For that reason, logistic regression was used in order to get the coefficients for each feature from the model. After the model we deduced that alcohol was the biggest contributor in quality since it had the highest coefficient. This makes sense with alcohol being the most reviewed feature of wine by consumers. As compared to residual sugar and citric acid, more often than not, a consumer will mostly just check the amount of alcohol in wine. 
   - As for the credibility of this model, it is best to not fully trust it but rather to be taken into consideration. Just because alcohol has the best impact on quality, does not mean that more alcohol will guarantee better quality since there is a limit to how much a human can consume. Also data had limited ranges such as with quality only having values from 3-8, giving us a small amount of good quality wine data. This lack of variety made it harder for the model to be able to predict values outside this range. 
+  
+  #### Model 2: KNN Classification
+  - We wanted to figure out whether or not the quality of the wine was good or bad, therefore we decided to use KNN classification. After testing out different k values between the range of 21 to 61, we found that the k value of 39 gave use the most accurate model. With our resulting model with K = 39, we found the model to be slightly overfitting in part by the low training MSE and the relatively high testing MSE. However, the model supported the findings from the first model that alcohol was the best indicator of a wines quality.
+  - The credibility of this model, similarly to model 1, should be taken with a grain of salt. Correlation is not causation, as just because the alcohol level is higher in a wine this will not make its quality better as there is a limit to how high a level of alcohol humans can tolerate. Also other factors such as the aging process, length of aging, and types of wooden barrel used to age the wine can affect the alcohol level, which may be better indicators of wine quality that are not seen in our dataset.
+  
 
 ### F. Conclusion
   - ToDo
