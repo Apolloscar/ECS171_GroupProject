@@ -139,4 +139,19 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
   - ToDo
 
 ### G. Collaboration
-  - ToDo
+  - Oscar Hernandez:
+    - Added report for model 2
+    - Wrote model 1 results
+    - Worked on model 1 code
+  - Caroline Li:
+    - Worked on model 1 code
+  - Mardan Mahmut:
+    - Wrote model 2 discussion
+    - Worked on model 2 code
+  - Matthew Schulz:
+    - Wrote group project abstract
+    - Wrote model 1 preprocessing
+    - Worked on model 1 code
+  - Rishi Thakkar:
+    - Worked on model 2 code
+    - Wrote model 2 preprocessing
