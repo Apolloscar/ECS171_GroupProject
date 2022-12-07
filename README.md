@@ -44,8 +44,17 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
   - We chose to build a project around determining the main factors contributing to a red-wine's quality because we wanted to relate what we learned in class to something completely unrelated. We wanted to show the versatility of topics that machine learning can be applied to. If we can build a model to effectively predict red-wine quality based on its physicochemical attributes, then we can determine the qualities that heavily influence the grade of red-wine. This information can then be used in industry to allow producers to focus on fine tuning attributes, which will produce the highest quality product, and as a result increase the price at which they can sell their red-wine.
 
 ### B. Figures
-  - ToDo
+![source: towardsdatascience.com](./figures/minmax_fig.webp)
+- Above is a figure that is helpful to vizualize the effect of MinMax scaling. All features will be transformed into the range [0,1] meaning that then minimum and maximum value of a feature is going to be 0 and 1, respectively.  
+<br>
 
+![source: towardsdatascience.com](./figures/logistic_reg.png)
+- This figure is helpful in vizualizing logistic regression. Since our model aims to classify red-wine as good or not, we can utilize this method to better predict correct outputs. If we used linear regression, our model wouldn't be able to accurately fit the complex dataset we have.  
+<br>
+
+![source: ibm.com](./figures/knn_fig.png)
+- This figure is helpful in vizualizing KNN classification. KNN assumes that similar data exist in close proximity, and utlitizes this assumption to classify data into a class. In our case, we utilize this method to determine whether an observation it a good or bad quality red-wine.
+ 
 ### C. Methods
 -  [Link to full ipynb on GitHub](https://github.com/Apolloscar/ECS171_GroupProject/blob/main/Project.ipynb)
 
@@ -56,8 +65,6 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
      - Checked if any of the features had missing values.
      - Used the describe() function and created a pairplot.
      - Generated a correlation matrix in the form of a heatmap.
-
-
 
    #### Preprocessing
    - [Link to Preprocessing on GitHub](https://github.com/Apolloscar/ECS171_GroupProject/blob/main/Code_Sections/DataPreprocessing.ipynb)
