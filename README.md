@@ -21,10 +21,10 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
  - quality (score between 0 and 10)
 
  ### Group Project Abstract
-- This data on red wine was gathered in Northern Portugal. It contains physicochemical qualities of wine as well as a subject value on quality ranging from 0-10.  
+- This data on red-wine was gathered in Northern Portugal. It contains physicochemical qualities of wine as well as a subject value on quality ranging from 0-10.  
 - We can create a model that uses the physicochemical attributes to determine whether a red wine will be good or not. 
 - Then, to determine this we will convert quality values to 1, if they are above a threshold such as 7 or 8, and if they are below convert them to 0. 
-- We will then use logistic regression to create a model that can predict quality;furthermore, we can create a correlation matrix and model coefficients on a scatterplot to see which attributes strongly affect the taste of red wine. 
+- We will then use logistic regression to create a model that can predict quality; furthermore, we can create a correlation matrix and model coefficients on a scatterplot to see which attributes strongly affect the taste of red wine. 
 - This model can be used to determine which factors significantly influence the quality of red wine to improve flavor and can help create a guideline on what values each component should have. 
 - Also, if the wine were to taste bad, then these attributes could be checked under the model to determine which characteristic is negatively affecting the flavor.
 - Another model can be created using KNN, which could be used to classify wine as either good or bad with the given features.
@@ -62,18 +62,18 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
    #### Model 1: Logistic Regression
    - [Link to Model 1 on GitHub](https://github.com/Apolloscar/ECS171_GroupProject/blob/main/Code_Sections/Model1_Logistic.ipynb)
    - For our first model, we built it using logistic regression.
-   - Used resampled, scaled data to train model.
-   - Used model to predict yhat of both training and testing data.
-   - Used those values to produce MSE as well as their classification report.
-   - Created a scatterplot with coefficients from model and printed their values.
+   - Using the resampled, scaled data, we trained the model.
+   - We then predicted yhat of both training and testing data.
+   - After, we found the MSE and printed a classification report.
+   - Finally, we created a scatterplot with coefficients from the model and printed their values.
 
    #### Model 2: KNN Classification
    - [Link to Model 2 on GitHub](https://github.com/Apolloscar/ECS171_GroupProject/blob/main/Code_Sections/Model2_KNN.ipynb)
    - Second model, KNN was used to clasify wine as either good or bad.
-   - Test models with different K values and aved their acurracy.
-   - Chose K with highest accuracy and used it for model.
-   - Predicted yhat for both training and testing data.
-   - Calculated MSE and Classification Report with these values.
+   - We tested models with different K-values and recorded their acurracies.
+   - Then, we chose K with highest accuracy and used it for model.
+   - After, we predicted yhat for both training and testing data.
+   - And finally, we calculated the MSE and printed a classification report with these values.
 
 ### D. Results
 #### Model 1: Logistic Regression
@@ -103,16 +103,13 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
 
  #### Model 2: KNN Classification
    
-   - Trying odd values with 21 and 61, it was determined that a K value of 39 gave us the most accurate model.
+   - It was determined that a K-value of 39 gave us the most accurate model.
    - Given the MSE from training and testing of the model, it is believed that the model is slightly overfitting due to training MSE being low and testing MSE being relatively high.
 
 | Data      | MSE     |
 | --------  | ------  |
 | Training  | 0.157   |
 | Testing   | 0.290   |
-
- #### Final Results Summary
-   - ToDo
 
 ### E. Discussion
   #### Data Exploration
@@ -125,32 +122,33 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
   - After this, we noticed the frequency of ones in the **target** column was much lower than the frequency of zeroes. To address this, we oversampled our traning data before building the model, so enough data could be present in each of the **target** classes to better train the model.
   #### Model 1: Logistic Regression
   - We wanted to figure out which of the features given in the data had the most impact in affecting the quality of wine. For that reason, logistic regression was used in order to get the coefficients for each feature from the model. After the model we deduced that alcohol was the biggest contributor in quality since it had the highest coefficient. This makes sense with alcohol being the most reviewed feature of wine by consumers. As compared to residual sugar and citric acid, more often than not, a consumer will mostly just check the amount of alcohol in wine. 
-  - As for the credibility of this model, it is best to not fully trust it but rather to be taken into consideration. Just because alcohol has the best impact on quality, does not mean that more alcohol will guarantee better quality since there is a limit to how much a human can consume. Also data had limited ranges such as with quality only having values from 3-8, giving us a small amount of good quality wine data. This lack of variety made it harder for the model to be able to predict values outside this range. 
-  ![source: ibm.com](./figures/knn_fig.png)
-  - This figure is helpful in vizualizing KNN classification. KNN assumes that similar data exist in close proximity, and utlitizes this assumption to classify data into a class.
+  - As for the credibility of this model, it is best to not fully trust it, but rather to be taken into consideration. Just because alcohol has the best impact on quality, it does not mean that more alcohol will guarantee better quality since there is a limit to how much a human can consume. Also, the data had limited ranges such as with quality only having values from 3-8, giving us a small amount of good quality wine data. This lack of variety will make it hard  for the model to be able to predict values outside of this range. 
   
   #### Model 2: KNN Classification
-  - We wanted to figure out whether or not the quality of the wine was good or bad, therefore we decided to use KNN classification. After testing out different k values between the range of 21 to 61, we found that the k value of 39 gave use the most accurate model. With our resulting model with K = 39, we found the model to be slightly overfitting in part by the low training MSE and the relatively high testing MSE. However, the model supported the findings from the first model that alcohol was the best indicator of a wines quality.
-  - The credibility of this model, similarly to model 1, should be taken with a grain of salt. Correlation is not causation, as just because the alcohol level is higher in a wine this will not make its quality better as there is a limit to how high a level of alcohol humans can tolerate. Also other factors such as the aging process, length of aging, and types of wooden barrel used to age the wine can affect the alcohol level, which may be better indicators of wine quality that are not seen in our dataset.
+  ![source: ibm.com](./figures/knn_fig.png)
+  - This figure is helpful in vizualizing KNN classification. KNN assumes that similar data exist in close proximity, and utlitizes this assumption to classify data into a class.
+  - With this in mind, after testing out different k values between the range of 21 to 61, we found that the K-value of 39 gave use the most accurate model. With model's K = 39, we found it to be slightly overfitting due to the low training MSE and relatively high testing MSE. However, the model supported the findings from the first model that alcohol was the best indicator of a wine's quality.
+  - The credibility of this model, similarly to model 1, should be taken with a grain of salt. Correlation is not causation; just because the alcohol level is higher in a wine this will not make its quality better as there is a limit to how high a level of alcohol humans can tolerate. Also, other factors during the aging process, such as time aged, and type of wooden barrel used can affect the alcohol level, which may be better indicators of wine quality that are not seen in our dataset.
   
 
 ### F. Conclusion
-  - ToDo
+  - This project has been very eye-opening and informative. Being able to create a model from begining to end has reinforced key topics we have learned this quarter. In the future, we can apply different preprocessing techniques to our model to improve performace, and utilize different methods to predict red-wine quality. Even though some areas still needs improvement, we have developed a well-rounded, adaptive model than can accurately predict the quality of red-wine based on physicochemical features.
 
 ### G. Collaboration
-  - Oscar Hernandez:
-    - Added report for model 2
-    - Wrote model 1 results
-    - Worked on model 1 code
-  - Caroline Li:
-    - Worked on model 1 code
-  - Mardan Mahmut:
-    - Wrote model 2 discussion
-    - Worked on model 2 code
-  - Matthew Schulz:
-    - Wrote group project abstract
-    - Wrote model 1 preprocessing
-    - Worked on model 1 code
-  - Rishi Thakkar:
+- Everyone gave feedack in all steps of the project, and did quality work.
+  - Oscar Hernandez (Coder, Writer, Team Lead):
+    - Added report for model 2.
+    - Wrote model 1 results.
+    - Worked on model 1 code.
+  - Caroline Li (Coder):
+    - Worked on model 1 code.
+  - Mardan Mahmut (Coder, Writer):
+    - Wrote model 2 discussion.
+    - Worked on model 2 code.
+  - Matthew Schulz (Team Lead, Coder, Writer, Project Manager):
+    - Organized, created comments, and added code to project.
+    - Structured, organized, edited, and contributed/finalized README.
+    - Added ToDos within README and project files to specify to teammmates tasks that needed to be completed.
+  - Rishi Thakkar (Coder, Writer):
     - Worked on model 2 code
     - Wrote model 2 preprocessing
