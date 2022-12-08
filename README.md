@@ -42,18 +42,6 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
 ## 4. Write Up
 ### A. Introduction
   - We chose to build a project around determining the main factors contributing to a red-wine's quality because we wanted to relate what we learned in class to something completely unrelated. We wanted to show the versatility of topics that machine learning can be applied to. If we can build a model to effectively predict red-wine quality based on its physicochemical attributes, then we can determine the qualities that heavily influence the grade of red-wine. This information can then be used in industry to allow producers to focus on fine tuning attributes, which will produce the highest quality product, and as a result increase the price at which they can sell their red-wine.
-
-### B. Figures
-![source: towardsdatascience.com](./figures/minmax_fig.webp)
-- Above is a figure that is helpful to vizualize the effect of MinMax scaling. All features will be transformed into the range [0,1] meaning that then minimum and maximum value of a feature is going to be 0 and 1, respectively.  
-<br>
-
-![source: towardsdatascience.com](./figures/logistic_reg.png)
-- This figure is helpful in vizualizing logistic regression. Since our model aims to classify red-wine as good or not, we can utilize this method to better predict correct outputs. If we used linear regression, our model wouldn't be able to accurately fit the complex dataset we have.  
-<br>
-
-![source: ibm.com](./figures/knn_fig.png)
-- This figure is helpful in vizualizing KNN classification. KNN assumes that similar data exist in close proximity, and utlitizes this assumption to classify data into a class. In our case, we utilize this method to determine whether an observation it a good or bad quality red-wine.
  
 ### C. Methods
 -  [Link to full ipynb on GitHub](https://github.com/Apolloscar/ECS171_GroupProject/blob/main/Project.ipynb)
@@ -127,15 +115,19 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
    - ToDo
 
 ### E. Discussion
-  - ToDo (Some notes below, see final submission assignment on canvas for more details)
-
-  - As a result of our exploration, we determined that no data needed to be dropped since all of the features were of the same data type, and no observations needed to be removed because no data was NULL. Furthermore, by utilizing the information from the describe() function and the pairplot, we determined that our data had some outliers.
-  - We then noticed the frequency of ones in the **target** column was much lower than the frequency of zeroes. To address this, we oversampled our traning data before building the model, so enough data was present in each of the **target** classes to better train the model.
-  - to remove the outliers we detected during data exploration.
-  - to see how our data was distributed
+  #### Data Exploration
+  - As a result of our exploration, we determined that no data needed to be dropped since all of the features were of the same type, and no observations needed to be removed because no data was NULL. Furthermore, by utilizing the information from describe(), the pairplot, and the heatmap we were able to view statistics about our data; for example, the central tendencies, dispertion, shape of our dataset's distributions, and realtionship between the features.
+  #### Data Preprocessing 
+  - We created a new feature, ***target***, and popluated it with values of zero or one in order to replce the quality column. This was done to be able to use logistic regression as a method to predict if a red-wine is good or not. 
+  ![source: towardsdatascience.com](./figures/logistic_reg.png)
+  - The above figure is helpful in vizualizing logistic regression. Since our model aims to classify red-wine as good or not, we need to create a ***target*** column with values one (good) or zero (bad). Also, we chose this method over linear regression in order to have a more accurate, adaptive model.
+  <br>
+  - After this, we noticed the frequency of ones in the **target** column was much lower than the frequency of zeroes. To address this, we oversampled our traning data before building the model, so enough data could be present in each of the **target** classes to better train the model.
   #### Model 1: Logistic Regression
   - We wanted to figure out which of the features given in the data had the most impact in affecting the quality of wine. For that reason, logistic regression was used in order to get the coefficients for each feature from the model. After the model we deduced that alcohol was the biggest contributor in quality since it had the highest coefficient. This makes sense with alcohol being the most reviewed feature of wine by consumers. As compared to residual sugar and citric acid, more often than not, a consumer will mostly just check the amount of alcohol in wine. 
   - As for the credibility of this model, it is best to not fully trust it but rather to be taken into consideration. Just because alcohol has the best impact on quality, does not mean that more alcohol will guarantee better quality since there is a limit to how much a human can consume. Also data had limited ranges such as with quality only having values from 3-8, giving us a small amount of good quality wine data. This lack of variety made it harder for the model to be able to predict values outside this range. 
+  ![source: ibm.com](./figures/knn_fig.png)
+  - This figure is helpful in vizualizing KNN classification. KNN assumes that similar data exist in close proximity, and utlitizes this assumption to classify data into a class.
   
   #### Model 2: KNN Classification
   - We wanted to figure out whether or not the quality of the wine was good or bad, therefore we decided to use KNN classification. After testing out different k values between the range of 21 to 61, we found that the k value of 39 gave use the most accurate model. With our resulting model with K = 39, we found the model to be slightly overfitting in part by the low training MSE and the relatively high testing MSE. However, the model supported the findings from the first model that alcohol was the best indicator of a wines quality.
