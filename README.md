@@ -30,7 +30,7 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
 - Another model can be created using KNN, which could be used to classify wine as either good or bad with the given features.
 
 ## 2. Submission History
-  - ToDo
+  - [Link to submission history on GitHub](https://github.com/Apolloscar/ECS171_GroupProject/commits/main)
 
 ## 3. Code Uploaded
   - [Link to full ipynb on GitHub](https://github.com/Apolloscar/ECS171_GroupProject/blob/main/Project.ipynb)
