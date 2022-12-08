@@ -138,10 +138,11 @@ Oscar Hernandez, Caroline Li, Mardan Mahmut, Matthew Schulz, Rishi Thakkar
 - Everyone gave feedack in all steps of the project, and did quality work.
   - Oscar Hernandez (Coder, Writer, Team Lead):
     - Added report for model 2.
-    - Wrote model 1 results.
     - Worked on model 1 code.
+    - Wrote and explained data exploration.
   - Caroline Li (Coder):
     - Worked on model 1 code.
+    - Wrote model 1 results.
   - Mardan Mahmut (Coder, Writer):
     - Wrote model 2 discussion.
     - Worked on model 2 code.
